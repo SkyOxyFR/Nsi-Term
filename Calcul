@@ -1,0 +1,15 @@
+def calcul(operation: str, a: float, b: float) -> float:
+
+    assert operation in ('+', '-', '*', '/'), "Opération non valide. Utilisez '+', '-', '*' ou '/'."
+    assert not (operation == '/' and b == 0), "Division par zéro impossible."
+    
+    if operation == '+':
+        resultat = a + b
+    elif operation == '-':
+        resultat = a - b
+    elif operation == '*':
+        resultat = a * b
+    elif operation == '/':
+        resultat = a / b
+    
+    return resultat
